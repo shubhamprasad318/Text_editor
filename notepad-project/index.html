@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel='stylesheet' href='styles.css' />
+ </head>
+<body>
+    <div class="main">
+        <h2>Text Editor</h2>
+        <div class="main-container">
+            <div class="header">
+                <input type="text" class="txtHeader" id="txtHeader" placeholder="Enter title here" />
+            </div>
+
+            <div class="content animate">
+                <textarea class="txtContent" id="txtContent" rows="10" cols="50" placeholder="Type or paste your text here..."></textarea>
+                <div id="characterCount">Characters: 0</div>
+                <div id="wordCount">Words: 0</div>
+                <div>
+                    <input type="text" id="searchInput" placeholder="Search for...">
+                    <input type="text" id="replaceInput" placeholder="Replace with...">
+                    <button onclick="replaceText()">Replace</button>
+                    <button onclick="increaseFontSize()">Increase Font Size</button>
+                    <button onclick="decreaseFontSize()">Decrease Font Size</button>
+                    <input type="color" id="fontColorPicker" onchange="changeFontColor()" value="#000000">
+                    <button id="undo">Undo</button>
+                    <button id="redo">Redo</button>
+                </div>
+            </div>
+
+            <div class="options">
+                <center>
+                    <button onclick="downloadFile()" class="btn btn-download">DOWNLOAD</button>
+                    <button onclick="changeStyle('b')" class="btn1"><b>B</b></button>
+                    <button onclick="changeStyle('i')" class="btn1"><i>I</i></button>
+                    <button onclick="changeStyle('u')" class="btn1">U</button>
+                    <button onclick="changeStyle('n')" class="btn1">N</button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>
