@@ -41,5 +41,4 @@ This is a simple text editor built using HTML, CSS, and JavaScript. It allows us
 5. **Track word/character count**: The word and character count are displayed as you type.  
 6. **Search and replace**: Use the search and replace input fields to find and replace specific text.  
 7. **Download the text**: Click the "DOWNLOAD" button to save the content as a `.txt` file.  
-8. **Undo/Redo**: Use the undo and redo buttons to revert or reapply changes.  
-1. 
+8. **Undo/Redo**: Use the undo and redo buttons to revert or reapply changes. 
